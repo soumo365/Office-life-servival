@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <title>Office Survival Simulator</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- Start / Restart Controls -->
+    
+    <!-- Office Game App -->
+    <div class="office-app" >
+        <!-- Header -->
+    <header class="header">
+        <h1>🏢 Office Survival Simulator</h1>
+        <div class="timer">⏰ 09:00 AM</div>
+        <span>Shift ends at 7:00 PM</span>
+        <button id="startGame">Start Game</button>
+        <button id="pauseGame" style="display:none;">Pause</button>
+        <button id="resumeGame" style="display:none;">Resume</button>
+    </header>
+
+
+        <!-- Stats Panel -->
+        <section class="stats">
+            <div class="stat">
+                <label class="moodLabel">Mood</label>
+                <div class="bar mood"></div>
+            </div>
+            <div class="stat">
+                <label class="energyLabel">Energy</label>
+                <div class="bar energy"></div>
+            </div>
+            <div class="stat">
+                <label class="stressLabel">Stress</label>
+                <div class="bar stress"></div>
+            </div>
+            <div class="stat">
+                <label class="productivityLabel">Productivity</label>
+                <div class="bar productivity"></div>
+            </div>
+        </section>
+
+        <!-- Action Buttons -->
+        <section class="actions">
+            <button class="btn coffee">☕ Coffee</button>
+            <button class="btn break">🛋️ Take Break</button>
+            <button class="btn distraction">📱 Distraction</button>
+        </section>
+
+        <!-- Events -->
+        <section class="events">
+            <h3>📢 Notification</h3>
+            <div class="event-log">
+                <p></p>
+            </div>
+        </section>
+
+        <!-- End Day -->
+        <footer class="footer">
+            <button class="btn end-day">End Day</button>
+            <div class="score">Performance Score: 0</div>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
